@@ -2,6 +2,9 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\GitController;
+use App\Http\Controllers\Api\NewEnvironmentController;
+use App\Http\Controllers\Api\DeployController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +17,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+/*Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
-});
+});*/
+
+Route::prefix('git')->group(
+    function(){
+        Route::post('/deploy', [DeployController::class, 'deploy']);
+        Route::post('/new-enviroment', [NewEnvironmentController::class, 'new']);
+        Route::post('/clone', [GitController::class, 'clone']);
+        Route::post('/pull', [GitController::class, 'pull']);
+        Route::post('/checkout', [GitController::class, 'checkout']);
+        Route::post('/stash', [GitController::class, 'stash']);
+        Route::post('/stashpop', [GitController::class, 'stashPop']);
+
+    }
+);
