@@ -1,0 +1,16 @@
+version: "3"
+services:
+    php_8_deploy_manage:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: php_8_deploy_manage
+        ports:
+            - "8000:80"
+        volumes:
+            - ./volumes/backup:/deployManage/backup/
+            - ./volumes/pathTmp:/deployManage/pathTmp/
+            - ./volumes/config/sites-enabled:/etc/apache2/sites-enabled/
+            - ./volumes/config/sites-available:/etc/apache2/sites-available/
+            - ./volumes/www:/var/www/html/
+        restart: always
