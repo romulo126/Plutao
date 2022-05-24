@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\GitController;
 use App\Http\Controllers\Api\NewEnvironmentController;
 use App\Http\Controllers\Api\DeployController;
+use App\Http\Controllers\Api\ComposerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,3 +34,4 @@ Route::prefix('git')->group(
 
     }
 );
+Route::post('/composer', [ComposerController::class, 'install']);
