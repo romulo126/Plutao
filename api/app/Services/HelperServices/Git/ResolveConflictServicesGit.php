@@ -2,7 +2,7 @@
 
 namespace App\Services\HelperServices\Git;
 
-use App\Services\InterfacesServices\Git\ResolveConflictServicesGitInterface;
+use App\Interfaces\Services\Git\ResolveConflictServicesGitInterface;
 
 class ResolveConflictServicesGit implements ResolveConflictServicesGitInterface
 {

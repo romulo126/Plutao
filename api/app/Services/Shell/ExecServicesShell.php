@@ -2,7 +2,7 @@
 
 namespace App\Services\Shell;
 
-use App\Services\InterfacesServices\Shell\ExecServicesShellInterface;
+use App\Interfaces\Services\Shell\ExecServicesShellInterface;
 
 class ExecServicesShell implements ExecServicesShellInterface
 {

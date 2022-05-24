@@ -3,7 +3,7 @@
 namespace App\Services\Git;
 
 use App\Services\ConfigServices\Git;
-use App\Services\InterfacesServices\Git\PullRepositoryServicesGitInterface;
+use App\Interfaces\Services\Git\PullRepositoryServicesGitInterface;
 
 class PullServicesGit  extends Git implements PullRepositoryServicesGitInterface
 {

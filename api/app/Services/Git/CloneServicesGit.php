@@ -3,7 +3,7 @@
 namespace App\Services\Git;
 
 use App\Services\ConfigServices\Git;
-use App\Services\InterfacesServices\Git\CloneRepositoryServicesGitInterface;
+use App\Interfaces\Services\Git\CloneRepositoryServicesGitInterface;
 
 #require __DIR__ . '/../../../vendor/autoload.php';
 
