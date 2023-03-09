@@ -3,7 +3,7 @@
 namespace App\Services\Git;
 
 use App\Services\ConfigServices\Git;
-use App\Services\InterfacesServices\Git\CheckoutServicesGitInterface;
+use App\Interfaces\Services\Git\CheckoutServicesGitInterface;
 
 class CheckoutServicesGit extends Git implements CheckoutServicesGitInterface
 {

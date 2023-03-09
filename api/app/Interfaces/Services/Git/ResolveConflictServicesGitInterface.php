@@ -1,5 +1,5 @@
 <?php
-namespace App\Services\InterfacesServices\Git;
+namespace App\Interfaces\Services\Git;
 
 interface ResolveConflictServicesGitInterface
 {

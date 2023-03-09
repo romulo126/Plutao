@@ -3,7 +3,7 @@
 namespace App\Services\Git;
 
 use App\Services\ConfigServices\Git;
-use App\Services\InterfacesServices\Git\StashServicesGitInterface;
+use App\Interfaces\Services\Git\StashServicesGitInterface;
 
 class StashServicesGit extends Git implements StashServicesGitInterface
 {

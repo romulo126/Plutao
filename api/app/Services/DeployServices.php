@@ -2,7 +2,7 @@
 
 namespace App\Services;
 
-use App\Services\InterfacesServices\Git\DeployServicesInterface;
+use App\Interfaces\Services\Git\DeployServicesInterface;
 
 class DeployServices implements DeployServicesInterface
 {

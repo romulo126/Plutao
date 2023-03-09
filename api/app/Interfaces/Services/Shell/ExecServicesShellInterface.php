@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\InterfacesServices\Shell;
+namespace App\Interfaces\Services\Shell;
 
 interface ExecServicesShellInterface
 {

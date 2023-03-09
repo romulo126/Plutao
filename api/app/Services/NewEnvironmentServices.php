@@ -2,7 +2,7 @@
 
 namespace App\Services;
 
-use App\Services\InterfacesServices\Git\NewEnvironmentServicesInterface;
+use App\Interfaces\Services\Git\NewEnvironmentServicesInterface;
 use App\Services\Git\CloneServicesGit;
 use App\Services\Git\PullServicesGit;
 use App\Services\HelperServices\Git\ResolveConflictServicesGit;
